@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Nav = () => {
+  const { push, pathname } = useRouter();
+
   const handleLangSwitch = lang => {
-    // Add the logic for lang switch here
-    console.log(lang);
+    push(pathname, pathname, { locale: lang });
   }
 
   return (
