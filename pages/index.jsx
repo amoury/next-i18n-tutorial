@@ -11,7 +11,7 @@ export default function Home() {
       <div className="my-24">
         <h1 className="font-medium">Hey Amoury, welcome to the demo</h1>
 
-        <p>{translate(locale, 'lipsum_dummy_content')}</p>
+        <p>{translate(locale)('lipsum_dummy_content')}</p>
       </div>
     </div>
   )

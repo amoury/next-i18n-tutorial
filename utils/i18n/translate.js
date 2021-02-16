@@ -8,7 +8,7 @@ const TRANSLATIONS = {
   fr
 }
 
-const translate = (language = 'en', token) => {
+const translate = (language = 'en') => (token) => {
   let value;
 
   try {
